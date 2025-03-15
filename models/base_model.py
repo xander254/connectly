@@ -17,7 +17,7 @@ Base = declarative_base()
 class BaseModel(Base):
     __abstract__ = True
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    user_id = Column(Integer, autoincrement=True, primary_key=True,)
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime,
                         default=datetime.utcnow,
